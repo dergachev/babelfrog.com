@@ -1,13 +1,17 @@
-# Site settings
-name: BabelFrog
-title: Your awesome title
-email: alex@evolvingweb.ca
-description: "BabelFrog is a Google Chrome extension to help you learn a language as you browse the web."
-baseurl: ""
-url: "http://babelfrog.com"
-source: source
-destination: deploy
+name:   'BabelFrog'
+url:    'http://babelfrog.com'
+author: 'Alex Dergachev'
 
-# Build settings
-markdown: kramdown
-permalinks: pretty
+include:  ['_pages']
+
+paginate:      10
+paginate_path: '/blog/page:num/'
+permalink:     '/blog/:year/:title/'
+relative_permalinks: false
+
+excerpt_separator: "{{ more }}"
+
+safe:     true
+pygments: false
+markdown: 'kramdown'
+timezone: 'America/Chicago'
