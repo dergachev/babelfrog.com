@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="chrome=1" />
-		<title>{% if page.title %}{{ page.title }}{% else %}PixelCog{% endif %}</title>
+		<title>{% if page.title %}{{ page.title }}{% else %}BabelFrog{% endif %}</title>
 		
 		<link rel="canonical" href="{{ site.url }}{{ page.url }}" />
 {% if page.blogfeed %}
@@ -11,6 +11,10 @@
 {% endif %}
 		<link rel="stylesheet" href="/css/main.css" />
 		<link rel="stylesheet" href="/css/syntax.css" />
+
+    <link rel="shortcut icon" type="image/png" href="{{ site.url }}/img/frog48.png"/>
+    <link rel="shortcut icon" type="image/png" href="/img/frog48.png"/>
+
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -21,26 +25,28 @@
 			<header>
 				<h1><a href="/"><img src="/img/logo.png" alt="{{ site.name }}" width="300" /></a></h1>
 				<nav><ul>
-					<li><a {% if location == 'about' %}class="active" {% endif %}href="/about/">About</a></li>
-					<li><a {% if location == 'projects' %}class="active" {% endif %}href="/projects/">Projects</a></li>
+					<li><a {% if location == '' %}class="active" {% endif %}href="/">Home</a></li>
+					<li><a {% if location == 'demo' %}class="active" {% endif %}href="/demo/">Demo</a></li>
+					<li><a {% if location == 'help' %}class="active" {% endif %}href="/help/">Help</a></li>
 					<li><a {% if location == 'blog' %}class="active" {% endif %}href="/blog/">Blog</a></li>
-					<li><a {% if location == 'contact' %}class="active" {% endif %}href="/contact/">Contact</a></li>
+          <!--	<li><a {% if location == 'about' %}class="active" {% endif %}href="/about/">About</a></li> -->
 				</ul></nav>
 			</header>
 			<section>
 				{{ content }}
 			</section>
 			<footer>
-{% if page.nobio != true %}{% if location != '' %}
-				<img class="avatar" src="http://www.gravatar.com/avatar/33f90637d77f8d4da67faafd3af6597e?s=144" alt="Me" />
+{% if page.nobio != true %}
+				<img class="avatar" src="http://www.gravatar.com/avatar/0bceeea1c7179c102b50812a1d2c74c3.png" alt="Me" />
+        <p>BabelFrog is a side-project of <a href="https://github.com/dergachev/">Alex Dergachev</a> who's currently using it to improve his French while living in Montreal, Quebec and running <a href="http://evolvingweb.ca">Evolving Web</a>, a Drupal consultancy.</p>
+				<p><a href="http://github.com/dergachev">github</a> | <a href="http://twitter.com/dergachev">twitter</a> | <a href="https://www.linkedin.com/in/alexdergachev">linked.in</a></p>
 {% endif %}
-				<p>PixelCog is the home of <a href="/about/">Mike Greiling</a>, freelance programmer, consultant, and entrepeneur.</p>
-				<p><a href="http://github.com/mikegreiling">github</a> | <a href="http://twitter.com/mikegreiling">twitter</a> | <a href="http://facebook.com/mike.greiling">facebook</a></p>
-{% endif %}
+<!--
 				<p>
-					<small>© {{ site.time | date: '%Y' }} PixelCog Inc.</small><br />
+					<small>© {{ site.time | date: '%Y' }} Evolving Web</small><br />
 					<small>Made with <a href="http://jekyllrb.com/">Jekyll</a> &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small>
 				</p>
+        -->
 			</footer>
 		</div>
 		<script src="/js/scale.fix.js"></script>
