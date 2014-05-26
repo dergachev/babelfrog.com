@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+	<!-- Site/Blog Indexes -->
+	<url>
+		<loc>http://babelfrog.com</loc>
+		<lastmod>2014-05-26T09:51:20-05:00</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>http://babelfrog.com/blog/</loc>
+		<lastmod>2014-05-26T09:51:20-05:00</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+
+	<!-- Posts -->
+	<url>
+		<loc>http://babelfrog.com/blog/2014/about-babelfrog/</loc>
+		<lastmod>2014-05-21</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+
+	<!-- Pages -->
+	<url>
+		<loc>http://babelfrog.com/demo/</loc>
+		<lastmod>2014-05-26T09:51:20-05:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>http://babelfrog.com/help/</loc>
+		<lastmod>2014-05-26T09:51:20-05:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>http://babelfrog.com/projects/</loc>
+		<lastmod>2014-05-26T09:51:20-05:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
+	</url>
+</urlset>
