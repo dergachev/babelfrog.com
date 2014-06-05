@@ -4,15 +4,83 @@ layout:    default
 blogfeed:  true
 ---
 
+<style>
+.babelfrog-demo {
+  max-width: 400px;
+  margin: 20px auto 10px;
+  height: 240px;
+  overflow: hidden;
+  border: 8px solid #f0f0f0;
+	border-radius: 15px;
+}
 
-A Google Chrome extension to help you learn a language as you browse the web. Uses Google Translate to translate the selected text. 
+.button-wrapper {
+  width: 100%;
+  margin: 30px 0;
+  text-align: center;
+}
 
-![Screenshot](/img/babelfrog-screenshot.png)
+.button, .button:hover {
+  /*background-image: url('./img/icon19.png');*/
+  background-image: url('http://upload.wikimedia.org/wikipedia/commons/8/87/Google_Chrome_icon_%282011%29.png');
+  background-size: 19px;
+  background-repeat: no-repeat;
+  background-color: #6491b2;
+  background-position: 10px center;
+  padding: 10px 20px 10px 42px;
+  border-radius: 8px;
+  color: white;
+  font-size: 18px;
+  font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+  text-decoration: none;
+}
 
-Unlike other similar extensions, it doesn't slow down your browser or compromise your security by injecting itself into EVERY PAGE YOU visit, instead allowing you to activate it on a page-by-page basis.
+.babelfrog-intro {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.20);
+    color: green;
+    font-size: 35px;
+    margin-bottom: 8px;
+}
 
-To activate BabelFrog, simply open the page you'd like translated, then click on the BabelFrog icon, or press Alt-F on your keyboard. Doing this action a second time will bring up the BabelFrog settings panel, where you can set the languages you'd like to work in. 
-
-After activating BabelFrog on a given page, any selected text will be instantly translated into the language you chose. Because links can be awkward to select without accidentally clicking them, BabelFrog will translate any link you click on while holding down the Alt key.
+</style>
 
 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  $('.cr-btn').click(function (e) {
+    if(!$(this).hasClass('disabled')) {
+      e.preventDefault();
+      if(navigator.userAgent.toLowerCase().indexOf('chrome') > -1) {
+        chrome.webstore.install("https://chrome.google.com/webstore/detail/jnhmkblbgggfgeebimebebnkhgnagnpj", function() {
+          // success callback
+          $(".cr-btn").addClass("disabled").text('BabelFrog is already installed');
+          window.location.href = "/help"
+        });
+      }
+      else {
+        alert("Sorry, your browser does not support installing the Chrome extension.");
+      }
+    }
+  });
+});
+</script>
+
+<div class="babelfrog-intro">
+Website translation that doesn't suck.
+</div>
+
+**BabelFrog** is a light-weight Chrome extension that helps you read foreign websites by translating the text you select, not the whole page.
+
+<div class="babelfrog-demo"><img src="/img/babelfrog-demo-4.gif"/></div>
+
+Start reading websites in the original language, instead of waiting for a butchered machine translation.
+
+Unlike similar extensions, BabelFrog isn't bloated with features, won't slow down Chrome, or ask you for permission to steal data from every website you visit.
+
+<div class="button-wrapper">
+<a class="button cr-btn" href="https://chrome.google.com/webstore/detail/babelfrog/jnhmkblbgggfgeebimebebnkhgnagnpj">
+Add BabelFrog to Chrome
+</a>
+</div>
