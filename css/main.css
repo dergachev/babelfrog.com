@@ -4,7 +4,7 @@
 
 body {
 	margin: 0;
-	padding:50px;
+	padding:25px;
 	font:16px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color:#333;
 	font-weight:300;
@@ -179,35 +179,44 @@ th {
 /* Header / Sidebar Top */
 
 header {
-	width:275px;
-	float:left;
-	position:fixed;
-	border-right: 1px solid #eee;
-	padding: 50px 30px 50px 0;
-	min-height: 100%;
-	margin: -50px 0;
+	/* width:275px; */
+	/* float:left; */
+	/* position:fixed; */
+  /* width: 600px; */
+	/* border-right: 1px solid #eee; */
+	/* padding: 50px 30px 50px 0; */
+	/* min-height: 100%; */
+	/* margin: -50px 0; */
 }
 
 header h1 {
-	margin-bottom: 12px;
+  float: left;
+  width: 300px;
+	margin-bottom: 0px;
 }
 
 
 /* Navbar */
+
+nav {
+  float: right;
+  width: 275px;
+  height: 65px;
+}
 
 nav ul {
 	list-style:none;
 	height:24px;
 	padding:0;
 	background: #fff;
-	border-radius:5px;
-	border:1px solid #e5e5e5;
+	/* border-radius:5px; */
+	/* border:1px solid #e5e5e5; */
 	width:272px;
 }
 
 nav li {
 	float:left;
-	height:24px;
+	height:65px;
 	width:67px;
 	border-right:1px solid #e5e5e5;
 }
@@ -222,17 +231,19 @@ nav li a {
 	color:#999;
 	display:block;
 	text-align:center;
-	line-height:24px;
-	height:24px;
+	/* line-height:24px; */
+	/* height:24px; */
+  vertical-align: text-bottom;
+  line-height: 65px;
 	font-size:13px;
 }
 
 nav li:first-child a {
-	border-radius:5px 0 0 5px;
+	/* border-radius:5px 0 0 5px; */
 }
 
 nav li:last-child a {
-	border-radius:0 5px 5px 0;
+	/* border-radius:0 5px 5px 0; */
 }
 
 nav li a:hover,
@@ -379,7 +390,6 @@ footer {
 	font-size: 14px;
 	text-align: center;
 	width:275px;
-	float:left;
 	position:fixed;
 	bottom:50px;
 }
@@ -422,7 +432,6 @@ img.pull-left {
 	}
 	
 	header, section, footer {
-		float:none;
 		position:static;
 		width:auto;
 	}
