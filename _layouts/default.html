@@ -10,6 +10,7 @@
 		<link rel="alternate" type="application/atom+xml" title="{{ site.name }} — Feed" href="{{ site.url }}/blog/feed.atom" />
 {% endif %}
 		<link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/keys.css" type="text/css" />
 		<link rel="stylesheet" href="/css/syntax.css" />
 
     <link rel="shortcut icon" type="image/png" href="{{ site.url }}/img/frog48.png"/>
@@ -30,8 +31,8 @@
 				<h1><a href="/"><img src="/img/logo.png" alt="{{ site.name }}" width="300" /></a></h1>
 				<nav><ul>
 					<li><a {% if location == '' %}class="active" {% endif %}href="/">Home</a></li>
-					<li><a {% if location == 'demo' %}class="active" {% endif %}href="/demo/">Demo</a></li>
 					<li><a {% if location == 'help' %}class="active" {% endif %}href="/help/">Help</a></li>
+					<li><a {% if location == 'demo' %}class="active" {% endif %}href="/demo/">Demo</a></li>
 					<li><a {% if location == 'blog' %}class="active" {% endif %}href="/blog/">Blog</a></li>
           <!--	<li><a {% if location == 'about' %}class="active" {% endif %}href="/about/">About</a></li> -->
 				</ul></nav>
