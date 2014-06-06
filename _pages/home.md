@@ -68,7 +68,7 @@ $(document).ready(function() {
 </script>
 
 <div class="babelfrog-intro">
-Website translation that doesn't suck.
+Website translation that doesn't&nbsp;suck.
 </div>
 
 **BabelFrog** is a light-weight Chrome extension that helps you read foreign websites by translating the text you select, not the whole page.
@@ -77,10 +77,11 @@ Website translation that doesn't suck.
 
 Start reading websites in the original language, instead of waiting for a butchered machine translation.
 
-Unlike similar extensions, BabelFrog isn't bloated with features, won't slow down Chrome, or ask you for permission to steal data from every website you visit.
-
 <div class="button-wrapper">
 <a class="button cr-btn" href="https://chrome.google.com/webstore/detail/babelfrog/jnhmkblbgggfgeebimebebnkhgnagnpj">
 Add BabelFrog to Chrome
 </a>
 </div>
+
+Unlike similar extensions, BabelFrog isn't bloated with features. It won't slow down Chrome, or ask you for permission to steal data from every website you visit.
+
