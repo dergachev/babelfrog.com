@@ -4,7 +4,8 @@
 
 body {
 	margin: 0;
-	padding:25px;
+	padding: 20px;
+  padding-top: 15px;
 	font:16px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color:#333;
 	font-weight:300;
@@ -25,7 +26,7 @@ body {
 }
 
 img {
-	max-width:100%;
+  max-width: 100%;
 }
 
 /* Typography */
@@ -95,11 +96,9 @@ strong {
 }
 
 section {
-	width:600px;
-	float:right;
+	max-width: 600px;
 	padding-bottom:50px;
 	min-height: 400px;
-	overflow: hidden;
 }
 
 small {
@@ -179,14 +178,6 @@ th {
 /* Header / Sidebar Top */
 
 header {
-	/* width:275px; */
-	/* float:left; */
-	/* position:fixed; */
-  /* width: 600px; */
-	/* border-right: 1px solid #eee; */
-	/* padding: 50px 30px 50px 0; */
-	/* min-height: 100%; */
-	/* margin: -50px 0; */
 }
 
 header h1 {
@@ -204,13 +195,15 @@ nav {
   height: 65px;
 }
 
+footer, section {
+  clear: both;
+}
+
 nav ul {
 	list-style:none;
 	height:24px;
 	padding:0;
 	background: #fff;
-	/* border-radius:5px; */
-	/* border:1px solid #e5e5e5; */
 	width:272px;
 }
 
@@ -231,19 +224,9 @@ nav li a {
 	color:#999;
 	display:block;
 	text-align:center;
-	/* line-height:24px; */
-	/* height:24px; */
   vertical-align: text-bottom;
   line-height: 65px;
 	font-size:13px;
-}
-
-nav li:first-child a {
-	/* border-radius:5px 0 0 5px; */
-}
-
-nav li:last-child a {
-	/* border-radius:0 5px 5px 0; */
 }
 
 nav li a:hover,
@@ -390,8 +373,8 @@ footer {
 	font-size: 14px;
 	text-align: center;
 	width:275px;
-	position:fixed;
-	bottom:50px;
+	/* position:fixed; */
+	/* bottom:50px; */
 }
 
 img.avatar {
@@ -431,23 +414,13 @@ img.pull-left {
 		width:600px;
 	}
 	
-	header, section, footer {
-		position:static;
-		width:auto;
-	}
-	
 	header {
 		background: none;
-		position: relative;
 		margin: 0;
 		min-height: 0;
 		border: none;
 		padding: 0 0 15px;
 	}
-  
-  header h1 {
-		text-align: center;
-  }
 
 	section {
 		border:1px solid #eee;
@@ -462,7 +435,6 @@ img.pull-left {
 
 	
 	nav ul {
-	 position: static;
 	 margin: 0 auto;
 	}
 	
@@ -477,8 +449,17 @@ img.pull-left {
 @media print, screen and (max-width: 700px) {
 	body {
 		word-wrap:break-word;
-		padding-top: 15px;
 	}
+
+  header nav {
+    display: block;
+    float: none;
+    clear: both;
+  }
+
+  header, footer, section {
+    max-width: auto;
+  }
 	
 	div.wrapper {
 		width:auto;
@@ -488,14 +469,10 @@ img.pull-left {
 	header {
 		padding: 0 0 15px;
 	}
-	
-	header p.view {
-		position:static;
-	}
-	
-	header {
-		text-align: center;
-	}
+
+  header h1 {
+    width: auto;
+  }
 	
 	pre, pre > code {
 		word-wrap:normal;
@@ -503,9 +480,6 @@ img.pull-left {
 }
 
 @media print, screen and (max-width: 480px) {
-	body {
-		padding:15px;
-	}
 	.post-meta {
 		font-size: 15px;
 	}
