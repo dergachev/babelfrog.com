@@ -4,7 +4,8 @@
 
 body {
 	margin: 0;
-	padding:25px;
+	padding: 20px;
+  padding-top: 15px;
 	font:16px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color:#333;
 	font-weight:300;
@@ -25,7 +26,7 @@ body {
 }
 
 img {
-	width: 100%;
+  max-width: 100%;
 }
 
 /* Typography */
@@ -96,10 +97,8 @@ strong {
 
 section {
 	max-width: 600px;
-	float:right;
 	padding-bottom:50px;
 	min-height: 400px;
-	/* overflow: hidden; */
 }
 
 small {
@@ -415,11 +414,6 @@ img.pull-left {
 		width:600px;
 	}
 	
-	/* header, section, footer { */
-	header, section {
-		width:auto;
-	}
-	
 	header {
 		background: none;
 		margin: 0;
@@ -455,8 +449,13 @@ img.pull-left {
 @media print, screen and (max-width: 700px) {
 	body {
 		word-wrap:break-word;
-		padding-top: 15px;
 	}
+
+  header nav {
+    display: block;
+    float: none;
+    clear: both;
+  }
 
   header, footer, section {
     max-width: auto;
@@ -470,6 +469,10 @@ img.pull-left {
 	header {
 		padding: 0 0 15px;
 	}
+
+  header h1 {
+    width: auto;
+  }
 	
 	pre, pre > code {
 		word-wrap:normal;
@@ -477,16 +480,9 @@ img.pull-left {
 }
 
 @media print, screen and (max-width: 480px) {
-	body {
-		padding:15px;
-	}
 	.post-meta {
 		font-size: 15px;
 	}
-
-  header, footer, section {
-    max-width: 400px;
-  }
 }
 
 @media print {
