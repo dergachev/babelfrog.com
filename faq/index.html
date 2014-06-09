@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+		<title>BabelFrog</title>
+		
+		<link rel="canonical" href="http://babelfrog.com/faq/" />
+
+		<link rel="alternate" type="application/atom+xml" title="BabelFrog — Feed" href="http://babelfrog.com/blog/feed.atom" />
+
+		<link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/keys.css" type="text/css" />
+		<link rel="stylesheet" href="/css/syntax.css" />
+
+    <link rel="shortcut icon" type="image/png" href="http://babelfrog.com/img/frog48.png"/>
+    <link rel="shortcut icon" type="image/png" href="/img/frog48.png"/>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <!-- allows babelfrog inline install; see https://developer.chrome.com/webstore/inline_installation?hl=en -->
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/jnhmkblbgggfgeebimebebnkhgnagnpj" />
+
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<h1><a href="/"><img src="/img/logo.png" alt="BabelFrog" width="300" /></a></h1>
+				<nav><ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="/help/">Help</a></li>
+					<li><a class="active" href="/faq/">FAQ</a></li>
+					<li><a href="https://github.com/dergachev/babelfrog/">GitHub</a></li>
+          <!--	<li><a href="/about/">About</a></li> -->
+				</ul></nav>
+			</header>
+			<section>
+				<h1 id="faq">FAQ</h1>
+
+<h3 id="what-languages-are-supported">What languages are supported?</h3>
+
+<p>BabelFrog allows all <a href="https://support.google.com/translate/toolkit/answer/147837?hl=en">348 languages</a> supported by Google Translate API!</p>
+
+<h3 id="how-is-babelfrog-free">How is BabelFrog free?</h3>
+
+<p>While Google recently discontinued free access to the <a href="https://developers.google.com/translate/v2/faq">Google Translate API</a>, Chrome extensions are still able to access the public web service that powers <a href="https://translate.google.com">translate.google.com</a> website and Google Chrome’s built-in translation feature.</p>
+
+<h3 id="how-do-i-customize-the-keyboard-shortcut">How do I customize the keyboard shortcut?</h3>
+
+<p>If the default keyboard shortcut (<kbd>Ctrl</kbd> + <kbd>B</kbd> on Windows, or <kbd>Cmd</kbd> + <kbd>B</kbd> on a mac) doesn’t work for you, you can change it via a link at the bottom of Chrome’s Extensions settings page:</p>
+
+<p class="pictureframe"><img src="https://dl.dropboxusercontent.com/u/29440342/screenshots/WFNKSNFA-2014.06.09-13-36-33.png" /></p>
+
+<h3 id="does-installing-babelfrog-pose-a-security-risk-or-slow-down-chrome">Does installing BabelFrog pose a security risk or slow down Chrome?</h3>
+
+<p>Most other extensions automatically run on EVERY webpage you visit, increasing
+page loading time and compromising your data for no good reason. To us, that’s
+about as absurd as eating frogs!  BabelFrog is careful to only run on the page
+YOU activate it. After you refresh or navigate away, it goes back to
+hibernation.</p>
+
+<h3 id="is-it-open-source">Is it open source?</h3>
+
+<p>What self-respecting frog wouldn’t want to reproduce? Visit <a href="https://github.com/dergachev/babelfrog">BabelFrog on
+GitHub</a> to fork the source code, and
+instructions for running the customized version.</p>
+
+<h3 id="what-if-i-found-a-bug">What if I found a bug?</h3>
+
+<p>BabelFrog loves bugs, especially juicy ones with screenshots, URLs, and other
+details! Although we can’t guarantee fast response, bug reports
+should go on the <a href="https://github.com/dergachev/babelfrog/issues">GitHub issue queue</a>. </p>
+
+<p>Pull requests and feature suggestions are welcome, though keep in mind that we’re
+trying to keep the functionality minimal. A frog should be just a frog.</p>
+
+			</section>
+			<footer>
+
+<!--
+				<p>
+					<small>© 2014 Evolving Web</small><br />
+					<small>Made with <a href="http://jekyllrb.com/">Jekyll</a> &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small>
+				</p>
+        -->
+			</footer>
+		</div>
+		<script src="/js/scale.fix.js"></script>
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-51237619-1']);
+			_gaq.push(['_trackPageview']);
+			
+			var disqus_shortname  = 'babelfrog',
+			    disqus_identifier = 'faq.md',
+			    disqus_url        = 'http://babelfrog.com/faq/'
+			;
+			(function() {
+				var load = function(src){
+					var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = src;
+					var e = document.getElementsByTagName('script')[0]; e.parentNode.insertBefore(s, e);
+				};
+				load(('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js');
+				load('//' + disqus_shortname + '.disqus.com/count.js');
+				if (document.getElementById('disqus_thread')) {
+					load('//' + disqus_shortname + '.disqus.com/embed.js');
+				}
+			})();
+		</script>
+	</body>
+</html>
