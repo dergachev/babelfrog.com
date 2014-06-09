@@ -35,11 +35,8 @@ blogfeed:  true
   text-decoration: none;
 }
 
-.babelfrog-intro {
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.20);
-    color: green;
-    font-size: 35px;
-    margin-bottom: 8px;
+h1 {
+  font-weight: normal;
 }
 
 </style>
@@ -67,9 +64,7 @@ $(document).ready(function() {
 });
 </script>
 
-<div class="babelfrog-intro">
-Website translation that doesn't&nbsp;suck.
-</div>
+# Website translation that doesn't&nbsp;suck.
 
 **BabelFrog** is a light-weight Chrome extension that helps you read foreign websites by translating the text you select, not the whole page.
 
