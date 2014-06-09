@@ -44,3 +44,7 @@ should go on the [GitHub issue queue](https://github.com/dergachev/babelfrog/iss
 
 Pull requests and feature suggestions are welcome, though keep in mind that we're
 trying to keep the functionality minimal. A frog should be just a frog.
+
+### What's up with the name?
+
+BabelFrog evolved from the [Babel fish](http://hitchhikers.wikia.com/wiki/Babel_Fish), and it croaks and has legs.
