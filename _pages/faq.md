@@ -15,7 +15,7 @@ BabelFrog allows all [348 languages](https://support.google.com/translate/toolki
 
 If the default keyboard shortcut (<kbd>Ctrl</kbd> + <kbd>B</kbd> on Windows, or <kbd>Cmd</kbd> + <kbd>B</kbd> on a mac) doesn't work for you, you can change it via a link at the bottom of Chrome's Extensions settings page:
 
-<p class="pictureframe"><img src="https://dl.dropboxusercontent.com/u/29440342/screenshots/WFNKSNFA-2014.06.09-13-36-33.png"></p>
+<img class="frame" src="/img/chrome-keyboard-shortcuts.png">
 
 ### Does installing BabelFrog pose a security risk or slow down Chrome?
 
