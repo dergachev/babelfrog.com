@@ -407,6 +407,14 @@ img.pull-left {
 	margin: 0 1em 1em 0;
 }
 
+img.frame {
+  border: 10px solid #eee;
+  text-align: center;
+  border-radius: 20px;
+  padding: 5px;
+  line-height: .2em;
+}
+
 
 /* Responsive Adjustments */
 
