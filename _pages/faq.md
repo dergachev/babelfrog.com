@@ -2,7 +2,6 @@
 permalink: /faq/
 layout:    default
 blogfeed:  true
-nobio: true
 ---
 
 FAQ
@@ -11,10 +10,6 @@ FAQ
 ### What languages are supported?
 
 BabelFrog allows all [348 languages](https://support.google.com/translate/toolkit/answer/147837?hl=en) supported by Google Translate API!
-
-### How is BabelFrog free?
-
-While Google recently discontinued free access to the [Google Translate API](https://developers.google.com/translate/v2/faq), Chrome extensions are still able to access the public web service that powers [translate.google.com](https://translate.google.com) website and Google Chrome's built-in translation feature.
 
 ### How do I customize the keyboard shortcut? 
 
@@ -30,20 +25,27 @@ about as absurd as eating frogs!  BabelFrog is careful to only run on the page
 YOU activate it. After you refresh or navigate away, it goes back to
 hibernation.
 
+### How is BabelFrog free?
+
+While Google recently discontinued free access to the [Google Translate API](https://developers.google.com/translate/v2/faq), Chrome extensions are still able to access the public web service that powers [translate.google.com](https://translate.google.com) website and Google Chrome's built-in translation feature.
+
+### Where can I leave a review for BabelFrog?
+
+If you like BabelFrog, tell the world by writing a review for it on the [Chrome Web Store](https://chrome.google.com/webstore/detail/babelfrog/jnhmkblbgggfgeebimebebnkhgnagnpj).
+
 ### Is it open source?
 
-What self-respecting frog wouldn't want to reproduce? Visit [BabelFrog on
-GitHub](https://github.com/dergachev/babelfrog) to fork the source code, and
-instructions for running the customized version.
+What self-respecting amphibian wouldn't want to spawn offspring? Visit the
+[GitHub repo](https://github.com/dergachev/babelfrog) to access and customize
+the source code.
 
 ### What if I found a bug?
 
 BabelFrog loves bugs, especially juicy ones with screenshots, URLs, and other
-details! Although we can't guarantee fast response, bug reports
-should go on the [GitHub issue queue](https://github.com/dergachev/babelfrog/issues). 
-
-Pull requests and feature suggestions are welcome, though keep in mind that we're
-trying to keep the functionality minimal. A frog should be just a frog.
+details! Bug reports should go on the [GitHub issue
+queue](https://github.com/dergachev/babelfrog/issues).  Pull requests and
+feature suggestions are welcome, though keep in mind that we're trying to keep
+the functionality minimal. A frog should be just a frog.
 
 ### What's up with the name?
 
