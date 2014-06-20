@@ -52,8 +52,9 @@ $(document).ready(function() {
       if(navigator.userAgent.toLowerCase().indexOf('chrome') > -1) {
         chrome.webstore.install("https://chrome.google.com/webstore/detail/jnhmkblbgggfgeebimebebnkhgnagnpj", function() {
           // success callback
-          $(".cr-btn").addClass("disabled").text('BabelFrog is already installed');
-          window.location.href = "/help"
+          // $(".cr-btn").addClass("disabled").text('BabelFrog is already installed');
+          _gaq.push(['_trackEvent', 'Engagement', 'Install', 'Inline']);
+          window.location.href = "/help?install=inline";
         });
       }
       else {
