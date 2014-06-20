@@ -4,8 +4,8 @@
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="chrome=1" />
 		<title>{% if page.title %}{{ page.title }}{% else %}BabelFrog{% endif %}</title>
-		
-		<link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+    <meta property="og:image" content="{{site.url}}/img/babelfrog-static-screenshot-fb.png"/>
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
 {% if page.blogfeed %}
 		<link rel="alternate" type="application/atom+xml" title="{{ site.name }} — Feed" href="{{ site.url }}/blog/feed.atom" />
 {% endif %}
