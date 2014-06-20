@@ -8,7 +8,7 @@ Help
 
 First, activate BabelFrog on the current page by clicking on the BabelFrog icon on Chrome's toolbar: 
 
-<img class="frame" src="/img/babelfrog-chromebar.png"></p>
+<img class="frame" src="/img/babelfrog-chromebar.png">
 
 Now that BabelFrog is active, you can select any word, sentence, or paragraph to translate it.
 
