@@ -4,9 +4,7 @@
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="chrome=1" />
 		<title>BabelFrog Blog</title>
-
     <meta property="og:image" content="http://babelfrog.com/img/babelfrog-static-screenshot-fb.png"/>
-		
     <link rel="canonical" href="http://babelfrog.com/blog/index.html" />
 
 		<link rel="alternate" type="application/atom+xml" title="BabelFrog — Feed" href="http://babelfrog.com/blog/feed.atom" />
@@ -28,6 +26,7 @@
 		<![endif]-->
 	</head>
 	<body>
+    <a href="https://github.com/dergachev/babelfrog"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
 		<div class="wrapper">
 			<header>
 				<h1><a href="/"><img src="/img/logo.png" alt="BabelFrog" width="300" /></a></h1>
@@ -35,8 +34,8 @@
 					<li><a href="/">Home</a></li>
 					<li><a href="/help/">Help</a></li>
 					<li><a href="/faq/">FAQ</a></li>
-					<li><a href="https://github.com/dergachev/babelfrog/">GitHub</a></li>
-          <!--	<li><a href="/about/">About</a></li> -->
+          <!-- <li><a class="active" href="/blog/">News</a></li> -->
+         <li><a href="https://babelfrog.uservoice.com/">Forum</a></li>
 				</ul></nav>
 			</header>
 			<section>
@@ -44,22 +43,25 @@
 
 <div class="articles">
 
-	<h2 class="post-title"><a href="/blog/2014/about-babelfrog/">About BabelFrog</a></h2>
+	<h2 class="post-title"><a href="/blog/2014/showing-alternative-meanings/">Showing Alternative Meanings</a></h2>
 	<p class="post-meta">
-		21 May 2014 &bull;
+		23 Jun 2014 &bull;
 		 &lt; 1 min. read &bull;
-		<a href="/blog/2014/about-babelfrog/#disqus_thread" data-disqus-identifier="2014-05-21-about-babelfrog.markdown">Comments</a>
+		<a href="/blog/2014/showing-alternative-meanings/#disqus_thread" data-disqus-identifier="2014-06-23-showing-alternative-meanings.markdown">Comments</a>
 	</p>
 
 	
-	<a href="/blog/2014/about-babelfrog/" class="post-banner" style="background-image: url(/img/post-banners/opsworks-vagrant.png);">
-		<img src="/img/post-banners/opsworks-vagrant.png" alt="About BabelFrog" />
+	<a href="/blog/2014/showing-alternative-meanings/" class="post-banner" style="background-image: url(/img/post-banners/alternative-meanings.png);">
+		<img src="/img/post-banners/alternative-meanings.png" alt="Showing Alternative Meanings" />
 	</a>
 	
 	
-	<p class="post-excerpt">This blog post announces BabelFrog.
+	<p class="post-excerpt">Sometimes, the context of a sentence isn&#8217;t enough for the machine translation engine to figure out which of the several meanings to return. 
+to figure out the translation Inevitably, translating a single word Sometimes the translation returned picks ups an incorrect meaning of the word.
 
- [<a href="/blog/2014/about-babelfrog/">read more</a>]</p>
+To deal with the issue of words with multiple meaEver notice that sometimes the Digging further into Google Translate&#8217;s behavior, I discovered that theyStuff 
+
+ [<a href="/blog/2014/showing-alternative-meanings/">read more</a>]</p>
 	
 
 </div>
@@ -82,26 +84,48 @@
 			</footer>
 		</div>
 		<script src="/js/scale.fix.js"></script>
-		<script type="text/javascript">
-			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-51237619-1']);
-			_gaq.push(['_trackPageview']);
-			
-			var disqus_shortname  = 'babelfrog',
-			    disqus_identifier = 'index.html',
-			    disqus_url        = 'http://babelfrog.com/blog/index.html'
-			;
-			(function() {
-				var load = function(src){
-					var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = src;
-					var e = document.getElementsByTagName('script')[0]; e.parentNode.insertBefore(s, e);
-				};
-				load(('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js');
-				load('//' + disqus_shortname + '.disqus.com/count.js');
-				if (document.getElementById('disqus_thread')) {
-					load('//' + disqus_shortname + '.disqus.com/embed.js');
-				}
-			})();
-		</script>
+    <script>
+    // Include the UserVoice JavaScript SDK (only needed once on a page)
+    UserVoice=window.UserVoice||[];(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/qHf8fJeoSckTW994HySZg.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})();
+
+    //
+    // UserVoice Javascript SDK developer documentation:
+    // https://www.uservoice.com/o/javascript-sdk
+    //
+
+    // Set colors
+    UserVoice.push(['set', {
+      accent_color: '#6aba2e',
+      trigger_color: 'white',
+      trigger_background_color: '#448dd6'
+    }]);
+
+    // Identify the user and pass traits
+    // To enable, replace sample data with actual user traits and uncomment the line
+    UserVoice.push(['identify', {
+      //email:      'john.doe@example.com', // User’s email address
+      //name:       'John Doe', // User’s real name
+      //created_at: 1364406966, // Unix timestamp for the date the user signed up
+      //id:         123, // Optional: Unique id of the user (if set, this should not change)
+      //type:       'Owner', // Optional: segment your users by type
+      //account: {
+      //  id:           123, // Optional: associate multiple users with a single account
+      //  name:         'Acme, Co.', // Account name
+      //  created_at:   1364406966, // Unix timestamp for the date the account was created
+      //  monthly_rate: 9.99, // Decimal; monthly rate of the account
+      //  ltv:          1495.00, // Decimal; lifetime value of the account
+      //  plan:         'Enhanced' // Plan name for the account
+      //}
+    }]);
+
+    // Add default trigger to the bottom-right corner of the window:
+    UserVoice.push(['addTrigger', { mode: 'contact', trigger_position: 'bottom-right' }]);
+
+    // Or, use your own custom trigger:
+    //UserVoice.push(['addTrigger', '#id', { mode: 'contact' }]);
+
+    // Autoprompt for Satisfaction and SmartVote (only displayed under certain conditions)
+    UserVoice.push(['autoprompt', {}]);
+    </script>
 	</body>
 </html>

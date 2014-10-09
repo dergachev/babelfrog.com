@@ -7,20 +7,26 @@
 	<author>
 		<name>Alex Dergachev</name>
 	</author>
-	<updated>2014-06-20T13:00:15-05:00</updated>
+	<updated>2014-10-09T14:20:31-05:00</updated>
 
 	<entry>
-		<title type="text">About BabelFrog</title>
-		<link href="http://babelfrog.com/blog/2014/about-babelfrog/" />
-		<id>http://babelfrog.com/blog/2014/about-babelfrog/</id>
-		<published>2014-05-21T00:00:00-05:00</published>
-		<updated>2014-05-21T00:00:00-05:00</updated>
-		<summary type="html">This blog post announces BabelFrog.
+		<title type="text">Showing Alternative Meanings</title>
+		<link href="http://babelfrog.com/blog/2014/showing-alternative-meanings/" />
+		<id>http://babelfrog.com/blog/2014/showing-alternative-meanings/</id>
+		<published>2014-06-23T09:58:22-05:00</published>
+		<updated>2014-06-23T09:58:22-05:00</updated>
+		<summary type="html">Sometimes, the context of a sentence isn&amp;#8217;t enough for the machine translation engine to figure out which of the several meanings to return. 
+to figure out the translation Inevitably, translating a single word Sometimes the translation returned picks ups an incorrect meaning of the word.
+
+To deal with the issue of words with multiple meaEver notice that sometimes the Digging further into Google Translate&amp;#8217;s behavior, I discovered that theyStuff 
 
 </summary>
 		<content type="html">
-&lt;img src=&quot;http://babelfrog.com/img/post-banners/opsworks-vagrant.png&quot; alt=&quot;&quot; width=&quot;600&quot; /&gt;&lt;br /&gt;
-&lt;p&gt;This blog post announces BabelFrog.&lt;/p&gt;
+&lt;img src=&quot;http://babelfrog.com/img/post-banners/alternative-meanings.png&quot; alt=&quot;&quot; width=&quot;600&quot; /&gt;&lt;br /&gt;
+&lt;p&gt;Sometimes, the context of a sentence isn’t enough for the machine translation engine to figure out which of the several meanings to return. 
+to figure out the translation Inevitably, translating a single word Sometimes the translation returned picks ups an incorrect meaning of the word.&lt;/p&gt;
+
+&lt;p&gt;To deal with the issue of words with multiple meaEver notice that sometimes the Digging further into Google Translate’s behavior, I discovered that theyStuff &lt;/p&gt;
 </content>
 	</entry>
 

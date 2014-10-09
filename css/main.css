@@ -339,15 +339,16 @@ nav li a.active:hover {
 
 .post-banner {
 	display: block;
-	background: #000 url('/img/post-banners/no-image.gif') center;
+	background: #fff url('/img/post-banners/no-image.gif') center;
 	background-size: auto 100%;
+  background-repeat:no-repeat;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	overflow: hidden;
 	margin: 0.5em 0;
 	width: 100%;
-	max-height: 150px;
+	/* max-height: 150px; */
 }
 .post-banner.no-image,
 .post-banner.no-image:hover {
