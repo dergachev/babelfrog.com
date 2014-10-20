@@ -11,9 +11,11 @@ FAQ
 
 BabelFrog allows all [348 languages](https://support.google.com/translate/toolkit/answer/147837?hl=en) supported by Google Translate API!
 
+By default, BabelFrog is configured to translate from *French* to *English*, but this is easily customizable via <a href="http://babelfrog.com/help/#settings">BabelFrog options</a> page.
+
 ### How do I customize the keyboard shortcut? 
 
-If the default keyboard shortcut (<kbd>Ctrl</kbd> + <kbd>B</kbd> on Windows, or <kbd>Cmd</kbd> + <kbd>B</kbd> on a mac) doesn't work for you, you can change it via a link at the bottom of Chrome's Extensions settings page:
+If the default keyboard shortcut (<kbd>Ctrl</kbd> + <kbd>E</kbd> on Windows, or <kbd>Cmd</kbd> + <kbd>E</kbd> on a mac) doesn't work for you, you can change it via a link at the bottom of Chrome's Extensions settings page:
 
 <img class="frame" src="/img/chrome-keyboard-shortcuts.png">
 
@@ -49,4 +51,6 @@ the functionality minimal. A frog should be just a frog.
 
 ### What's up with the name?
 
-BabelFrog evolved from the [Babel fish](http://hitchhikers.wikia.com/wiki/Babel_Fish), and it croaks and has legs.
+BabelFrog is a hybernating translating animal. It descends from the mythical
+[Babel
+Fish](http://hitchhikers.wikia.com/wiki/Babel_Fish), but croaks and hybernates when not in use.

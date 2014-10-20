@@ -6,15 +6,19 @@ layout:    default
 Help
 ====
 
-First, activate BabelFrog on the current page by clicking on the BabelFrog icon on Chrome's toolbar: 
+After you activate it on a given page, BabelFrog will translate all text to
+your chosen language. To activate:
 
-<img class="frame" src="/img/babelfrog-chromebar.png">
+* Via keyboard shortcut: <kbd>Ctrl</kbd> + <kbd>E</kbd> on Windows, <kbd>Cmd</kbd> + <kbd>E</kbd> on a Mac.
+* By selecting "Translate with BabelFrog" in the right-click menu.
+* By clicking on the BabelFrog icon in Chrome's toolbar:
+  <img class="frame" src="/img/babelfrog-chromebar.png">
 
 Now that BabelFrog is active, you can select any word, sentence, or paragraph to translate it.
 
 By default, BabelFrog translates from French to English, so here's some French text for you to practice on.
 
-<div class="amsterdam" style="padding: 3px 10px 3px 80px;">
+<div class="amsterdam" style="padding: 3px 10px 3px 80px; font-size: 1.4em; color: #555;">
 <p>
 Dans le port d'Amsterdam <br/>
 Y a des marins qui chantent <br/>
@@ -24,22 +28,9 @@ Au large d'Amsterdam<br/>
 <p><em>--Amsterdam, par Jacques Brel</em></p>
 </div>
 
-It should look like this:
+Happy translating!!
 
-<img class="frame" src="/img/babelfrog-translation.png" width="232px">
-
-Keep in mind that BabelFrog is activated only one page at a time. When you navigate to a different page (or even just refresh), BabelFrog is reset, to avoid slowing down your browser by running unnecessarily.
-
-### Keyboard shortcuts
-
-To speed this up, you can activate BabelFrog with a keyboard shortcut: 
-
-<div class="amsterdam">
-  <p><kbd>Ctrl</kbd> + <kbd>B</kbd> (on Windows)</p>
-  <p><kbd>Cmd</kbd> + <kbd>B</kbd> (on a Mac)</p>
-</div>
-
-### Settings
+### Language Settings
 
 Clicking on the BabelFrog icon a second time will bring up the settings panel, where you can set the languages you'd like to work in.
 
@@ -49,3 +40,4 @@ Clicking on the BabelFrog icon a second time will bring up the settings panel, w
 
 * To translate the text of a link, hold <kbd>Alt</kbd> while clicking on it.
 * Double click on a word to select it. Triple click to select the whole paragraph.
+* Keep in mind that BabelFrog is activated only one page at a time. When you navigate to a different page (or even just refresh), BabelFrog is reset, to avoid slowing down your browser by running unnecessarily.
