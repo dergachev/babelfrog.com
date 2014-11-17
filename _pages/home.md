@@ -50,11 +50,25 @@ $(document).ready(function() {
     if(!$(this).hasClass('disabled')) {
       e.preventDefault();
       if(navigator.userAgent.toLowerCase().indexOf('chrome') > -1) {
+        mixpanel.track("Start install");
         chrome.webstore.install("https://chrome.google.com/webstore/detail/jnhmkblbgggfgeebimebebnkhgnagnpj", function() {
           // success callback
           // $(".cr-btn").addClass("disabled").text('BabelFrog is already installed');
+
+          var mixpanelTrack = new $.Deferred();
+          var gaTrack = new $.Deferred();
+          $.when(mixpanelTrack, gaTrack).done(function() {
+            window.location.href = "/help?install=inline";
+          });
+
           _gaq.push(['_trackEvent', 'Engagement', 'Install', 'Inline']);
-          window.location.href = "/help?install=inline";
+          _gaq.push(function() {
+            gaTrack.resolve();
+          });
+
+          mixpanel.track("Install successful", undefined, function() {
+            mixpanelTrack.resolve();
+          });
         });
       }
       else {
