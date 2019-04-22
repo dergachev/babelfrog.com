@@ -82,41 +82,6 @@ h1 {
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-<script type="text/javascript">
-$(document).ready(function() {
-  $('.cr-btn').click(function (e) {
-    if(!$(this).hasClass('disabled')) {
-      e.preventDefault();
-      if(navigator.userAgent.toLowerCase().indexOf('chrome') > -1) {
-        mixpanel.track("Start install");
-        chrome.webstore.install("https://chrome.google.com/webstore/detail/jnhmkblbgggfgeebimebebnkhgnagnpj", function() {
-          // success callback
-          // $(".cr-btn").addClass("disabled").text('BabelFrog is already installed');
-
-          var mixpanelTrack = new $.Deferred();
-          var gaTrack = new $.Deferred();
-          $.when(mixpanelTrack, gaTrack).done(function() {
-            window.location.href = "/help?install=inline";
-          });
-
-          _gaq.push(['_trackEvent', 'Engagement', 'Install', 'Inline']);
-          _gaq.push(function() {
-            gaTrack.resolve();
-          });
-
-          mixpanel.track("Install successful", undefined, function() {
-            mixpanelTrack.resolve();
-          });
-        });
-      }
-      else {
-        alert("Sorry, your browser does not support installing the Chrome extension.");
-      }
-    }
-  });
-});
-</script>
-
 <h1 id="website-translation-that-doesntnbspsuck">Website translation that doesn’t suck.</h1>
 
 <p><strong>BabelFrog</strong> is a light-weight Chrome extension that helps you read foreign websites by translating the text you select, not the whole page.</p>
